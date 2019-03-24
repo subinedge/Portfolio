@@ -1,0 +1,20 @@
+{
+  "name": "webcoder",
+  "version": "1.0.0",
+  "description": "my portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Subin",
+  "license": "MIT",
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

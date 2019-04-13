@@ -11,3 +11,15 @@
     transform: translate(-30px);
   }
 }
+
+
+
+
+@keyframes slide {
+  0%{
+    top: -50%;
+  }
+  100% {
+    top: 40%;
+  }
+}

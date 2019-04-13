@@ -1,18 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Web Coder</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="particle-js"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="images/favicon.png" type="image/icon" sizes="16x16" />
+  <title>Web Coder</title>
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="mixins.scss" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animate.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="particles-js"></div>
+    <div class="header-words">
+      Hello, I'm <span class="name">Subin Sudhakaran</span><br />
+      I'm a front-end web developer
+
+      <button class="header-cta" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+        View my work <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- -------------- NAVIGATION -------------- -->
+  <nav>
+    <div class="social-media-icons">
+      <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"
+          title="Github"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"
+          title="LinkedIn"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"
+          title="Instagram"></i></a>
     </div>
 
-    <script src="/js/particle.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <ul class="navLink">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <i class="fa fa-bars burger"></i>
+  </nav>
+
+  <!-- About Me Section -->
+
+  <div class="about-me">
+    <div class="heading">
+      I'M A <br />
+      DEVELOPER
+    </div>
+
+    <div class="about-me-words">
+      <div class="where-i-have-been">
+        <h4>WHERE I'VE BEEN</h4>
+        <p>
+          I was born and brought up in Chennai, India. And the following is
+          Cliche but true. Ever so true. My specialisation was in Mechanical
+          Engineering and currently working as an SAP Consultant and my aim
+          (or passion) is to become a Web Developer. I've gone through so much
+          hardwork to find my passion and also working in a job that I don't
+          love, but that doesn't make me weak, infact it made me stronger to
+          thrive for something that I love. Whether in personal matters or in
+          job, the same things hold true. What is the problem? And how do I
+          solve that problem?
+        </p>
+      </div>
+      <div class="what-i-am-doing">
+        <h4>WHAT I'M DOING</h4>
+        <p>
+          Currently working as an SAP Consultant in
+          <a href="https://www.accenture.com">Accenture</a> since Oct 2017.
+          This had been a great opportunity for me to work in a team and meet
+          the client's expectation, as it will help me to work in Web
+          development field. I don't know what caused me to love this field so
+          much, that even at hardtimes (self-&nbsp;learning) , it makes me
+          feel like it'll be worth it.
+        </p>
+      </div>
+      <div class="what-i-hope-to-do">
+        <h4>WHAT I HOPE TO DO</h4>
+        <p>
+          Change the world! Talk about Cliche. Seriously though... I hope to
+          be the best developer & learner I can possibly be. Everyday is a
+          chance of improvement. There's no reason we shouldn't be taking that
+          opportunity we have been given. And to start with... I owe some
+          peeps. A lot. That is a gross understatement in reality. So my only
+          plan is to get better. Personality & professionally. I will be
+          better. Every day.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-resume">
+    <a href="#" class="resume">
+      Resume <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- Skills section -->
+
+  <div class="projects">
+    <div class="projects-header">
+      Projects
+    </div>
+  </div>
+
+  <div class="grid-container">
+
+
+    <figure class="grid_item grid_item-1">
+      <div class="text" style="text-align:center;">
+        JavaScript <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-1.jpg" alt="">
+    </figure>
+
+
+    <figure class="grid_item grid_item-2">
+      <div class="text" style="text-align:center;">
+        Bootstrap <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-2.jpg" alt="">
+    </figure>
+
+
+    <figure class="grid_item grid_item-3">
+      <div class="text" style="text-align:center;">
+        HTML / CSS <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-3.jpg" alt="">
+    </figure>
+
+
+    <figure class="grid_item grid_item-4">
+      <div class="text" style="text-align:center;">
+        React JS <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-4.jpg" alt="">
+    </figure>
+
+
+    <figure class="grid_item grid_item-5">
+      <div class="text" style="text-align:center;">
+        Wordpress <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-5.jpg" alt="">
+    </figure>
+
+
+    <figure class="grid_item grid_item-6">
+      <div class="text" style="text-align:center;">
+        Grid/Flexbox <br />
+        <button class="online_view">View Site</button>
+      </div>
+      <img class="grid_image" src="images/project-6.jpg" alt="">
+    </figure>
+
+  </div>
+
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+  <h1>sdfghjk</h1>
+
+  <script src="node_modules/particles.js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

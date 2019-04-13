@@ -1,0 +1,10 @@
+// Custom Width Border
+
+@mixin shortBorder($width, $padding-top, $border-thickness, $border-color) {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: $width;
+  padding-top: $padding-top;
+  border-bottom: $border-thickness solid $border-color;
+}

@@ -10,6 +10,7 @@
             transform: translate(-30px);
   }
 }
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -20,6 +21,24 @@
     opacity: 1;
     -webkit-transform: translate(-30px);
             transform: translate(-30px);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 40%;
   }
 }
 /*# sourceMappingURL=animate.css.map */

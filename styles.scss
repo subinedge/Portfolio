@@ -1,5 +1,268 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  position: relative;
+}
+
+#particles-js {
+  background-color: $header-main;
+  height: 100vh;
+}
+
+.header-words {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.7rem;
+  color: $plane-white;
+  font-family: $primary-font;
+  line-height: 3rem;
+
+  span.name {
+    color: #d41b68;
+    font-weight: bolder;
+  }
+
+  button {
+    display: block;
+    cursor: pointer;
+    margin: 1rem auto;
+    padding: 0.7rem 1.7rem;
+    font-family: $primary-font;
+    background-color: transparent;
+    color: $plane-white;
+    border: 2px solid $plane-white;
+    font-size: 1.3rem;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    i {
+      transition: all 0.3s linear;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+// -------------- NAVIGATION --------------
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: $nav-bar;
+  border-bottom: 4px solid #04c2c9;
+  z-index: 999;
+
+  i {
+    cursor: pointer;
+    color: $plane-white;
+    letter-spacing: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+    li {
+      list-style-type: none;
+
+      a {
+        font-family: $primary-font;
+        transition: all 0.3s linear;
+        letter-spacing: 2px;
+        color: $plane-white;
+        text-decoration: none;
+
+        &:hover {
+          color: #d41b68;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+// About Me
+
+// .about-me {
+//   position: relative;
+//   height: 92vh;
+//   font-family: $primary-font;
+//   padding: 2rem;
+
+//   h2 {
+//     text-align: center;
+//     letter-spacing: 1px;
+//     text-transform: capitalize;
+//   }
+
+//   h2:after {
+//     @include shortBorder(5%, 10px, 3px);
+//   }
+// }
+
+.heading {
+  font-family: $heading-font;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  color: $nav-bar;
+  padding: 30px;
+  margin-top: 3rem;
+}
+
+.about-me-words {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  padding: 10px 30px;
+  text-align: justify;
+  grid-auto-rows: minmax(200px, auto);
+
+  h4 {
+    font-family: $roboto-mono;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: rgb(17, 59, 94);
+  }
+
+  p {
+    font-family: $para-font;
+    color: rgb(65, 56, 46);
+    line-height: 1.5rem;
+  }
+}
+
+.download-resume {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+a.resume {
+  text-decoration: none;
+  color: $header-main;
+  background-color: transparent;
+  color: $header-main;
+  border: 2px solid $header-main;
+  padding: 15px 30px;
+  transition: all 0.3s linear;
+  margin-bottom: 3rem;
+
+  &:hover {
+    background-color: $button-hover-color;
+    color: $plane-white;
+  }
+}
+
+// Skills section
+
+.projects {
+  position: relative;
+  height: auto;
+  color: #111;
+  z-index: -1;
+  font-family: $primary-font;
+  padding: 2rem;
+
+  .projects-header {
+    font-size: 2.3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 2rem 0;
+  }
+
+  .projects-header:after {
+    @include shortBorder(4rem, 10px, 3px, #111);
+  }
+  
+}
+
+.grid-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns : repeat(3,1fr);
+  grid-template-rows: repeat(2, 20vw);
+  height: auto;
+  // grid-gap: 10px;
+  // z-index: -1;
+}
+
+.grid_image {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.5s ease-in;
+}
+
+.grid_item {
+  position: relative;
+/*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
+  overflow: hidden; 
+}
+
+.grid_item:hover .grid_image {
+  transform : scale(1.1);
+  filter: blur(2px);
+}
+
+.text {
+  font-size : 1.3rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  display: none;
+  font-family: $roboto-mono;
+}
+
+.online_view {
+  margin-top: 5rem;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  outline:none;
+  border: 1px solid #e5e5e5;
+}
+
+button.online_view {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.online_view:hover{
+  color: #CA5D46;
+}
+
+.grid_item:hover .text {
+  display: block;
+  
+/*   text to see, otherwise hides in the back */
+  z-index: 999;
+  animation : slide 0.7s ease;
+}
+
+
+

@@ -1,6 +1,143 @@
-@media only screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (30vw)[3];
+        grid-template-rows: repeat(3, 30vw);
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .heading {
+    font-size: 5rem;
+  }
+  .about-me-words {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    padding: 10px 30px;
+    text-align: justify;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .about-me-words p {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   body {
-    font-size: 0.5rem;
+    overflow-x: hidden;
+  }
+  nav ul {
+    position: absolute;
+    right: 8px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #1b242f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
+    overflow-x: hidden;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  nav .fa-linkedin-square,
+  nav .fa-instagram,
+  nav .fa-github {
+    font-size: 1.8rem;
+  }
+  nav .burger {
+    display: block;
+    font-size: 1.4rem;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+@media screen and (max-width: 740px) {
+  .header-words {
+    font-size: 2.5rem;
+  }
+  button.header-cta {
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-words {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  button.header-cta {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .heading {
+    font-size: 3.15rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-me-words {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    text-align: justify;
+    grid-auto-rows: minmax(200px, auto);
+  }
+  .about-me-words p {
+    margin-bottom: 40px;
+  }
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (50vw)[6];
+        grid-template-rows: repeat(6, 50vw);
+  }
+  .grid-container .grid_image {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-words {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  button.header-cta {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
   }
 }
 /*# sourceMappingURL=mediaqueries.css.map */

@@ -1,17 +1,9 @@
+
 // Load Particle JS
 
 particlesJS.load('particles-js', 'js/particle.json', function () {
   console.log('callback - particles.js config loaded');
 });
-
-
-// load sal JS
-
-sal({
-  // threshold: 1, this will make the animation disappear after passing through it, so commenting 
-  once: false,
-});
-
 
 
 
@@ -20,15 +12,15 @@ sal({
 
 // On hover button, arrow rotate downwards
 
-var font_awesome = document.querySelector('.fa-arrow-right');
+let font_awesome = document.querySelector('.fa-arrow-right');
 
 function mouseEnter() {
-    console.log('in');
+  // console.log('in');
   font_awesome.classList.add('fa-rotate-90');
 }
 
 function mouseLeave() {
-    console.log('out');
+  //   console.log('out');
   font_awesome.classList.remove('fa-rotate-90');
 }
 
@@ -76,6 +68,6 @@ input_field.forEach(input => {
 
 // download resume
 
-const fileDownload = document.querySelector('.resume').addEventListener('click', function() {
+const fileDownload = document.querySelector('.resume').addEventListener('click', function () {
   window.location = './resume/resume.pdf';
 });

@@ -24,10 +24,12 @@ $nav-bar: #1b242f;
     filter: none;
   }
 
+  .grid-item{
   button {
     position: relative;
     left: -1000px;
   }
+}
 
   .text {
     display: block;

@@ -19,7 +19,7 @@
     -webkit-filter: none;
             filter: none;
   }
-  .grid-item button {
+  button:not(.header-cta) {
     position: relative;
     left: -1000px;
   }

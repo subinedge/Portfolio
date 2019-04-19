@@ -24,12 +24,11 @@ $nav-bar: #1b242f;
     filter: none;
   }
 
-  .grid-item{
-  button {
+  
+  button:not(.header-cta) {
     position: relative;
     left: -1000px;
   }
-}
 
   .text {
     display: block;

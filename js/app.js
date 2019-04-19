@@ -20,7 +20,7 @@ sal({
 
 // On hover button, arrow rotate downwards
 
-let font_awesome = document.querySelector('.fa-arrow-right');
+var font_awesome = document.querySelector('.fa-arrow-right');
 
 function mouseEnter() {
     console.log('in');

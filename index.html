@@ -232,22 +232,6 @@
   <script src="/node_modules/sal.js/dist/sal.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./js/app.js"></script>
-  <script>
-    // checking for input data in contact form, if yes.... remove the label or else stay fit
-
-
-    const input_field = document.querySelectorAll('.input-text');
-    input_field.forEach(input => {
-      input.addEventListener('keyup', function () {
-        // console.log(input);
-        if (input.value == '') {
-          input.classList.remove('not-empty');
-        } else {
-          input.classList.add('not-empty');
-        }
-      })
-    });
-  </script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@ function mouseEnter() {
 }
 
 function mouseLeave() {
-//     console.log('out');
+    console.log('out');
   font_awesome.classList.remove('fa-rotate-90');
 }
 

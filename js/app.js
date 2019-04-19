@@ -4,6 +4,18 @@ particlesJS.load('particles-js', 'js/particle.json', function () {
   console.log('callback - particles.js config loaded');
 });
 
+
+// load sal JS
+
+sal({
+  // threshold: 1, this will make the animation disappear after passing through it, so commenting 
+  once: false,
+});
+
+
+
+
+
 // --------- HEADER ----------
 
 // On hover button, arrow rotate downwards
@@ -46,7 +58,24 @@ const navSlide = function () {
 navSlide();
 
 
-// projects section
-function addBackground() {
-  console.log('che che');
-}
+// checking for input data in contact form, if yes.... remove the label or else stay fit
+
+
+const input_field = document.querySelectorAll('.input-text');
+input_field.forEach(input => {
+  input.addEventListener('keyup', function () {
+    // console.log(input);
+    if (input.value == '') {
+      input.classList.remove('not-empty');
+    } else {
+      input.classList.add('not-empty');
+    }
+  })
+});
+
+
+// download resume
+
+const fileDownload = document.querySelector('.resume').addEventListener('click', function() {
+  window.location = './resume/resume.pdf';
+});

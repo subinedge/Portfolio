@@ -1,3 +1,4 @@
+@import "mixins";
 $nav-bar: #1b242f;
 
 // ----------------------  1100 px --------------------------------
@@ -16,6 +17,30 @@ $nav-bar: #1b242f;
     display: grid;
     grid-template-columns : repeat(2,1fr);
     grid-template-rows: repeat(3, 30vw);
+  }
+
+  .grid_item:hover .grid_image {
+    transform : none;
+    filter: none;
+  }
+
+  button {
+    position: relative;
+    left: -1000px;
+  }
+
+  .text {
+    display: block;
+    // background-color: #e5e5e5;
+    
+  }
+
+  @include languagePlacement(165px, -165px, 1.1rem);
+
+
+  .grid_item:hover .text {
+    display: block;
+    animation: none;
   }
 }
 
@@ -39,6 +64,8 @@ $nav-bar: #1b242f;
       margin-bottom: 30px;
     }
   }
+
+  @include languagePlacement(150px, -150px, 1.1rem);
 }
 
 // ----------------------  768 px --------------------------------
@@ -78,11 +105,17 @@ $nav-bar: #1b242f;
       font-size: 1.4rem;
     }
   }
+  
+  .nav-active {
+  transform: translateX(20%);
+  }
+
+  @include languagePlacement(130px, -130px, 1rem);
+
 }
 
-.nav-active {
-  transform: translateX(20%);
-}
+
+
 
 // ----------------------  740 px --------------------------------
 
@@ -95,6 +128,8 @@ $nav-bar: #1b242f;
     font-size: 1.3rem;
     padding: 0.7rem 1rem;
   }
+
+  @include languagePlacement(125px, -110px, 0.8rem);
 }
 
 // ----------------------  600 px --------------------------------
@@ -113,7 +148,41 @@ $nav-bar: #1b242f;
   .heading {
     font-size: 3.15rem;
   }
+
+  .projects {
+  .projects-header {
+    font-size: 30px;
+  }
 }
+
+  .get-in-touch {
+
+    .title {
+      font-size: 30px;
+    }
+
+    .row {
+      .col {
+        float: none;
+        padding: 0 4rem 0 4rem;
+     
+      &.x-50 {
+        width: 100%;
+        }
+    
+      }
+
+    }
+
+    .label {
+      padding: 0 0 0 3rem;
+    }
+  }
+
+  @include languagePlacement(110px, -80px, 0.8rem);
+}
+
+  
 
 // ----------------------  540 px --------------------------------
 
@@ -138,7 +207,28 @@ $nav-bar: #1b242f;
       margin-top: 2rem;
     }
   }
+
+  @include languagePlacement(165px, -165px, 1rem);
+
+  .movetotop {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+
+    i {
+      font-size: 23px;
+      position: absolute;
+      bottom: 10px;
+      right: 8px;
+    }
+  }
+
 }
+
+
+
+
 
 // ----------------------  500 px --------------------------------
 
@@ -152,4 +242,10 @@ $nav-bar: #1b242f;
     font-size: 0.9rem;
     padding: 0.5rem 0.7rem;
   }
+
+  @include languagePlacement(140px, -135px, 1rem);
 }
+
+
+
+

@@ -8,3 +8,24 @@
   padding-top: $padding-top;
   border-bottom: $border-thickness solid $border-color;
 }
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin languagePlacement($top, $left, $font) {
+  .language {
+    position: absolute;
+    top: $top;
+    left: $left;
+    font-size: $font;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+  }
+}

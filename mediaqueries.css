@@ -13,6 +13,34 @@
     -ms-grid-rows: (30vw)[3];
         grid-template-rows: repeat(3, 30vw);
   }
+  .grid_item:hover .grid_image {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-filter: none;
+            filter: none;
+  }
+  button {
+    position: relative;
+    left: -1000px;
+  }
+  .text {
+    display: block;
+  }
+  .language {
+    position: absolute;
+    top: 165px;
+    left: -165px;
+    font-size: 1.1rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  .grid_item:hover .text {
+    display: block;
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 @media screen and (max-width: 830px) {
@@ -31,6 +59,16 @@
   }
   .about-me-words p {
     margin-bottom: 30px;
+  }
+  .language {
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    font-size: 1.1rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
   }
 }
 
@@ -74,11 +112,20 @@
     display: block;
     font-size: 1.4rem;
   }
-}
-
-.nav-active {
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%);
+  .nav-active {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  .language {
+    position: absolute;
+    top: 130px;
+    left: -130px;
+    font-size: 1rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -88,6 +135,16 @@
   button.header-cta {
     font-size: 1.3rem;
     padding: 0.7rem 1rem;
+  }
+  .language {
+    position: absolute;
+    top: 125px;
+    left: -110px;
+    font-size: 0.8rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
   }
 }
 
@@ -102,6 +159,32 @@
   }
   .heading {
     font-size: 3.15rem;
+  }
+  .projects .projects-header {
+    font-size: 30px;
+  }
+  .get-in-touch .title {
+    font-size: 30px;
+  }
+  .get-in-touch .row .col {
+    float: none;
+    padding: 0 4rem 0 4rem;
+  }
+  .get-in-touch .row .col.x-50 {
+    width: 100%;
+  }
+  .get-in-touch .label {
+    padding: 0 0 0 3rem;
+  }
+  .language {
+    position: absolute;
+    top: 110px;
+    left: -80px;
+    font-size: 0.8rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
   }
 }
 
@@ -128,6 +211,28 @@
   .grid-container .grid_image {
     margin-top: 2rem;
   }
+  .language {
+    position: absolute;
+    top: 165px;
+    left: -165px;
+    font-size: 1rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+  }
+  .movetotop {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+  }
+  .movetotop i {
+    font-size: 23px;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -138,6 +243,16 @@
   button.header-cta {
     font-size: 0.9rem;
     padding: 0.5rem 0.7rem;
+  }
+  .language {
+    position: absolute;
+    top: 140px;
+    left: -135px;
+    font-size: 1rem;
+    background-color: cadetblue;
+    width: auto;
+    padding: 10px;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=mediaqueries.css.map */

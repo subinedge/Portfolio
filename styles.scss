@@ -29,8 +29,12 @@
   line-height: 3rem;
 
   span.name {
-    color: #d41b68;
+    color: $name;
     font-weight: bolder;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   button {
@@ -56,7 +60,14 @@
   }
 }
 
+
+
+
+
 // -------------- NAVIGATION --------------
+
+
+
 
 nav {
   position: sticky;
@@ -66,7 +77,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: $nav-bar;
-  border-bottom: 4px solid #04c2c9;
+  border-bottom: 4px solid $button-hover-color;
   z-index: 999;
 
   i {
@@ -89,9 +100,10 @@ nav {
         letter-spacing: 2px;
         color: $plane-white;
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
-          color: #d41b68;
+          color: $name;
           font-weight: bolder;
         }
       }
@@ -103,24 +115,12 @@ nav {
   }
 }
 
-// About Me
 
-// .about-me {
-//   position: relative;
-//   height: 92vh;
-//   font-family: $primary-font;
-//   padding: 2rem;
 
-//   h2 {
-//     text-align: center;
-//     letter-spacing: 1px;
-//     text-transform: capitalize;
-//   }
+// ----------------- ABOUT ME ------------------ 
 
-//   h2:after {
-//     @include shortBorder(5%, 10px, 3px);
-//   }
-// }
+
+
 
 .heading {
   font-family: $heading-font;
@@ -168,6 +168,7 @@ a.resume {
   padding: 15px 30px;
   transition: all 0.3s linear;
   margin-bottom: 3rem;
+  cursor: pointer;
 
   &:hover {
     background-color: $button-hover-color;
@@ -175,7 +176,16 @@ a.resume {
   }
 }
 
+
+
+
+
+
 // Skills section
+
+
+
+
 
 .projects {
   position: relative;
@@ -186,11 +196,14 @@ a.resume {
   padding: 2rem;
 
   .projects-header {
-    font-size: 2.3rem;
     text-align: center;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 2rem 0;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 4rem;
+    padding-bottom: 3rem;
   }
 
   .projects-header:after {
@@ -253,7 +266,9 @@ button.online_view {
 }
 
 button.online_view:hover{
-  color: #CA5D46;
+  color: $plane-white;
+  background-color: $button-hover-color;
+  border: none;
 }
 
 .grid_item:hover .text {
@@ -263,6 +278,197 @@ button.online_view:hover{
   z-index: 999;
   animation : slide 0.7s ease;
 }
+
+
+
+
+
+
+// contact form
+
+
+
+
+
+.get-in-touch {
+  height: 75vh;
+  position: relative;
+  max-width: 650px;
+  margin: 6rem auto;
+  // top: 50%;
+  // transform: translateY(-50%);
+
+  .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 4rem;
+    padding-bottom: 3rem;
+
+    &:after {
+      @include shortBorder(7rem, 10px, 3px, #111);
+    }
+  }
+}
+
+// aligning button
+
+.align-center {
+  text-align: center;
+}
+
+.row {
+  @include clearfix;
+  // margin: -20px 0;
+
+  .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+
+    &.x-50 {
+      width: 50%;
+    }
+
+    &.x-100 {
+      width: 100%;
+    }
+  }
+}
+
+
+.contact-form {
+  .form-field {
+    position: relative;
+    margin: 3rem 0;
+  }
+
+  .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
+    &.not-empty {
+      + .label {
+        transform: translateY(-24px);
+      }
+    }
+  }
+
+  .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform .2s ease-in-out;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+
+// back to top button
+
+
+
+
+
+.movetotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #1f80db;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  z-index: 999;
+
+  i {
+    color: $plane-white;
+  }
+}
+
+
+
+// footer section
+
+
+footer {
+  background-color: $nav-bar;
+  width: 100%;
+  color: $plane-white;
+  height: auto;
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    i {
+      margin: 1.5rem;
+      font-size: 1.5rem;
+      background-color: $social-media-background-footer;
+      padding: 15px;
+      width: 3.3rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.4s ease-in;
+
+      &:hover {
+        background-color: $footer-social-media-hover;
+        transform: scale(0.9);
+        animation: incoming 0.5s ease;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 0 0 2rem 0;
+    color:#606A77;
+    font-size: 0.9rem;
+
+    span {
+      color: $name;
+    }
+  }
+}
+
 
 
 

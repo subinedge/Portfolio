@@ -23,12 +23,12 @@ sal({
 let font_awesome = document.querySelector('.fa-arrow-right');
 
 function mouseEnter() {
-  //   console.log('in');
+    console.log('in');
   font_awesome.classList.add('fa-rotate-90');
 }
 
 function mouseLeave() {
-  //   console.log('out');
+//     console.log('out');
   font_awesome.classList.remove('fa-rotate-90');
 }
 

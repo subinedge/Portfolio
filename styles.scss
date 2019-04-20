@@ -1,6 +1,5 @@
 @import 'variables.scss';
 @import 'mixins.scss';
-@import './node_modules/sal.js/dist/sal.css';
 
 * {
   margin: 0;
@@ -39,7 +38,7 @@
   }
 
   button {
-    display: block;
+    // display: block;
     cursor: pointer;
     margin: 1rem auto;
     padding: 0.7rem 1.7rem;

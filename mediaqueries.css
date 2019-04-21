@@ -79,6 +79,9 @@
   body {
     overflow-x: hidden;
   }
+  nav {
+    width: 100vw;
+  }
   nav ul {
     position: absolute;
     right: 8px;

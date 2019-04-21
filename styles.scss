@@ -68,10 +68,10 @@
 
 
 
-
 nav {
   position: sticky;
   top: 0;
+  max-width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -79,6 +79,7 @@ nav {
   background-color: $nav-bar;
   border-bottom: 4px solid $button-hover-color;
   z-index: 999;
+  // overflow: hidden;
 
   i {
     cursor: pointer;

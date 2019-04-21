@@ -49,6 +49,10 @@ $nav-bar: #1b242f;
 // ----------------------  830 px --------------------------------
 
 @media screen and (max-width: 830px) {
+
+  body {
+    overflow-x: hidden;
+  }
   .heading {
     font-size: 5rem;
   }
@@ -121,6 +125,11 @@ $nav-bar: #1b242f;
 // ----------------------  740 px --------------------------------
 
 @media screen and (max-width: 740px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .header-words {
     font-size: 2.5rem;
   }
@@ -136,6 +145,11 @@ $nav-bar: #1b242f;
 // ----------------------  600 px --------------------------------
 
 @media screen and (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .header-words {
     font-size: 2rem;
     line-height: 2rem;
@@ -188,6 +202,12 @@ $nav-bar: #1b242f;
 // ----------------------  540 px --------------------------------
 
 @media screen and (max-width: 540px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+
   .about-me-words {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -234,6 +254,11 @@ $nav-bar: #1b242f;
 // ----------------------  500 px --------------------------------
 
 @media screen and (max-width: 500px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .header-words {
     font-size: 1.7rem;
     line-height: 2rem;
@@ -247,6 +272,30 @@ $nav-bar: #1b242f;
   @include languagePlacement(140px, -135px, 1rem);
 }
 
+
+
+
+
+// ----------------------  400 px --------------------------------
+
+@media screen and (max-width: 400px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-words {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  button.header-cta {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  @include languagePlacement(120px, -115px, 0.8rem);
+}
 
 
 

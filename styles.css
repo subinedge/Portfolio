@@ -10,10 +10,6 @@
           box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-}
-
 .container {
   position: relative;
 }
@@ -124,6 +120,10 @@ nav ul li a:hover {
 
 nav .burger {
   display: none;
+}
+
+.nav-active {
+  opacity: 1;
 }
 
 .heading {

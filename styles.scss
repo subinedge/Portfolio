@@ -7,9 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
-}
 
 .container {
   position: relative;
@@ -119,6 +116,10 @@ nav {
     display: none;
   }
 }
+
+.nav-active {
+  opacity: 1;
+  }
 
 
 

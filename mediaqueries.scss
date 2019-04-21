@@ -84,16 +84,17 @@ $nav-bar: #1b242f;
     width: 100vw;
     ul {
       position: absolute;
-      right: 8px;
+      right: 0px;
       height: 92vh;
       top: 8vh;
       background-color: $nav-bar;
       display: flex;
       flex-direction: column;
       align-items: center;
-      right: -1000px;
+      // right: -1000px;
       overflow: hidden;
       transition: all 0.5s ease-in;
+      opacity: 0;
 
       li {
         text-align: center;
@@ -111,10 +112,7 @@ $nav-bar: #1b242f;
       font-size: 1.4rem;
     }
   }
-  
-  .nav-active {
-  right: 0;
-  }
+
 
   @include languagePlacement(130px, -130px, 1rem);
 

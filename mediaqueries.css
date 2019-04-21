@@ -178,6 +178,9 @@
 }
 
 @media screen and (max-width: 540px) {
+  .heading {
+    font-size: 2.75rem;
+  }
   .about-me-words {
     display: -ms-grid;
     display: grid;
@@ -225,6 +228,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .heading {
+    font-size: 2.3rem;
+  }
   .header-words {
     font-size: 1.7rem;
     line-height: 2rem;
@@ -246,6 +252,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  .heading {
+    font-size: 2rem;
+  }
   .header-words {
     font-size: 1.4rem;
     line-height: 1.7rem;

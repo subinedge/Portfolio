@@ -190,7 +190,9 @@ $nav-bar: #1b242f;
 
 @media screen and (max-width: 540px) {
 
-  
+  .heading {
+    font-size: 2.75rem;
+  }
 
 
   .about-me-words {
@@ -240,7 +242,9 @@ $nav-bar: #1b242f;
 
 @media screen and (max-width: 500px) {
 
-  
+  .heading {
+    font-size: 2.3rem;
+  }
 
   .header-words {
     font-size: 1.7rem;
@@ -263,7 +267,9 @@ $nav-bar: #1b242f;
 
 @media screen and (max-width: 400px) {
 
-  
+  .heading {
+    font-size: 2rem;
+  }
 
   .header-words {
     font-size: 1.4rem;

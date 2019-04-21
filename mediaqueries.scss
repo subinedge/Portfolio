@@ -282,6 +282,68 @@ $nav-bar: #1b242f;
   }
 
   @include languagePlacement(120px, -115px, 0.8rem);
+
+  footer {
+    .social-media-icons {
+      i {
+        margin: 1rem;
+        font-size: 1.5rem;
+        padding: 15px;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+
+
+// ----------------------  350 px --------------------------------
+
+@media screen and (max-width: 350px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-words {
+    font-size: 1.3rem;
+
+    button {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.8rem;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      i {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 2.1rem;
+  }
+
+  .get-in-touch {
+  .title {
+    font-size: 1.5rem;
+
+    &:after {
+      @include shortBorder(5rem, 5px, 3px, #111);
+    }
+  }
+}
+
+@include languagePlacement(110px, -75px, 0.8rem);
+  
+  footer {
+    .social-media-icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  }
 }
 
 

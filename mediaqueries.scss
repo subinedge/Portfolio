@@ -77,7 +77,6 @@ $nav-bar: #1b242f;
   
 
   nav {
-    width: 100vw;
     ul {
       position: absolute;
       right: 0px;
@@ -88,7 +87,6 @@ $nav-bar: #1b242f;
       flex-direction: column;
       align-items: center;
       // right: -1000px;
-      overflow: hidden;
       transition: all 0.5s ease-in;
       opacity: 0;
 
@@ -120,12 +118,6 @@ $nav-bar: #1b242f;
 // ----------------------  740 px --------------------------------
 
 @media screen and (max-width: 740px) {
-
-  
-
-  nav {
-    width: 100vw;
-  }
 
   .header-words {
     font-size: 2.5rem;

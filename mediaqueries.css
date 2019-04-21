@@ -73,9 +73,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    width: 100vw;
-  }
   nav ul {
     position: absolute;
     right: 0px;
@@ -92,7 +89,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    overflow: hidden;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     opacity: 0;
@@ -122,9 +118,6 @@
 }
 
 @media screen and (max-width: 740px) {
-  nav {
-    width: 100vw;
-  }
   .header-words {
     font-size: 2.5rem;
   }

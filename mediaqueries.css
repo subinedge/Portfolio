@@ -44,9 +44,6 @@
 }
 
 @media screen and (max-width: 830px) {
-  body {
-    overflow: hidden;
-  }
   .heading {
     font-size: 5rem;
   }
@@ -76,9 +73,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
   nav {
     width: 100vw;
   }
@@ -128,9 +122,6 @@
 }
 
 @media screen and (max-width: 740px) {
-  body {
-    overflow: hidden;
-  }
   nav {
     width: 100vw;
   }
@@ -154,9 +145,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
   .header-words {
     font-size: 2rem;
     line-height: 2rem;
@@ -197,9 +185,6 @@
 }
 
 @media screen and (max-width: 540px) {
-  body {
-    overflow: hidden;
-  }
   .about-me-words {
     display: -ms-grid;
     display: grid;
@@ -247,9 +232,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  body {
-    overflow: hidden;
-  }
   .header-words {
     font-size: 1.7rem;
     line-height: 2rem;
@@ -271,9 +253,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    overflow: hidden;
-  }
   .header-words {
     font-size: 1.4rem;
     line-height: 1.7rem;

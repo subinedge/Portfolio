@@ -190,12 +190,6 @@ $nav-bar: #1b242f;
 
 @media screen and (max-width: 540px) {
 
-  
-  h1 {
-    margin:0;
-    padding:0;
-  }
-
   .heading {
     font-size: 2.75rem;
   }
@@ -251,11 +245,7 @@ $nav-bar: #1b242f;
   .heading {
     font-size: 2.7rem;
   }
-
-  h1 {
-    margin:0;
-    padding:0;
-  }
+  
 
   .header-words {
     font-size: 1.7rem;
@@ -277,12 +267,6 @@ $nav-bar: #1b242f;
 // ----------------------  400 px --------------------------------
 
 @media screen and (max-width: 400px) {
-
-  
-  h1 {
-    margin:0;
-    padding:0;
-  }
 
   .heading {
     font-size: 2.3rem;

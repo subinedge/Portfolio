@@ -95,13 +95,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateX(120%);
-            transform: translateX(120%);
-    overflow-x: hidden;
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    right: -1000px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
   nav ul li {
     text-align: center;
@@ -116,8 +113,7 @@
     font-size: 1.4rem;
   }
   .nav-active {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
+    right: 0;
   }
   .language {
     position: absolute;

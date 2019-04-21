@@ -90,9 +90,9 @@ $nav-bar: #1b242f;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateX(120%);
-      overflow-x: hidden;
-      transition: transform 0.5s ease-in;
+      right: -1000px;
+      overflow: hidden;
+      transition: all 0.5s ease-in;
 
       li {
         text-align: center;
@@ -112,7 +112,7 @@ $nav-bar: #1b242f;
   }
   
   .nav-active {
-  transform: translateX(20%);
+  right: 0;
   }
 
   @include languagePlacement(130px, -130px, 1rem);

@@ -69,5 +69,5 @@ input_field.forEach(input => {
 // download resume
 
 const fileDownload = document.querySelector('.resume').addEventListener('click', function () {
-  window.location = './resume/resume.pdf';
+  window.location = './resume/Resume.docx';
 });

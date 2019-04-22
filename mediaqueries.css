@@ -228,6 +228,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   .heading {
     font-size: 2.7rem;
   }
@@ -238,6 +241,9 @@
   button.header-cta {
     font-size: 0.9rem;
     padding: 0.5rem 0.7rem;
+  }
+  .get-in-touch {
+    margin: 6rem -1rem;
   }
   .language {
     position: absolute;
@@ -285,6 +291,15 @@
   body {
     overflow-x: hidden;
   }
+  nav ul {
+    height: 91vh;
+  }
+  nav ul li {
+    margin-left: 3rem;
+  }
+  nav ul li:first-child {
+    margin-left: 70px;
+  }
   .header-words {
     font-size: 1.3rem;
   }
@@ -299,7 +314,12 @@
     margin-left: 0.3rem;
   }
   .heading {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
+    padding: 20px;
+    margin-top: 2rem;
+  }
+  nav {
+    min-height: 9vh;
   }
   .get-in-touch .title {
     font-size: 1.5rem;

@@ -242,6 +242,10 @@ $nav-bar: #1b242f;
 
 @media screen and (max-width: 500px) {
 
+  body{
+    overflow-x: hidden;
+  }
+
   .heading {
     font-size: 2.7rem;
   }
@@ -254,6 +258,10 @@ $nav-bar: #1b242f;
   button.header-cta {
     font-size: 0.9rem;
     padding: 0.5rem 0.7rem;
+  }
+
+  .get-in-touch {
+    margin: 6rem -1rem;
   }
 
   @include languagePlacement(140px, -135px, 1rem);
@@ -304,6 +312,19 @@ $nav-bar: #1b242f;
     overflow-x: hidden;
   }
 
+  nav {
+    ul {
+      height: 91vh;
+      li {
+        margin-left: 3rem;
+      }
+
+      li:first-child {
+        margin-left: 70px;
+      }
+    }
+  }
+
   .header-words {
     font-size: 1.3rem;
 
@@ -322,7 +343,13 @@ $nav-bar: #1b242f;
   }
 
   .heading {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
+    padding: 20px;
+    margin-top: 2rem;
+  }
+
+  nav {
+    min-height: 9vh;
   }
 
   .get-in-touch {

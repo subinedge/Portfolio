@@ -199,7 +199,7 @@ a.resume {
   color: #111;
   z-index: -1;
   font-family: $primary-font;
-  padding: 2rem;
+  padding: 1.5rem;
 
   .projects-header {
     text-align: center;
@@ -208,8 +208,8 @@ a.resume {
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 36px;
-    line-height: 4rem;
-    padding-bottom: 3rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
   }
 
   .projects-header:after {
@@ -310,8 +310,8 @@ button.online_view:hover{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 36px;
-    line-height: 4rem;
-    padding-bottom: 3rem;
+    // line-height: 2rem;
+    padding-bottom: 2rem;
 
     &:after {
       @include shortBorder(7rem, 10px, 3px, #111);
@@ -415,8 +415,8 @@ button.online_view:hover{
   width: 50px;
   height: 50px;
   background: #1f80db;
-  bottom: 40px;
-  right: 50px;
+  bottom: 30px;
+  right: 40px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;

@@ -40,7 +40,7 @@ const navSlide = function () {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
-        link.style.animation = `navLinkFade 1.5s ease forwards ${index / 7 +
+        link.style.animation = `navLinkFade 1s ease forwards ${index / 7 +
           0.5}`;
       }
     });

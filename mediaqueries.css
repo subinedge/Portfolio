@@ -25,6 +25,9 @@
   }
   .text {
     display: block;
+    font-family: "Roboto Mono";
+    text-transform: uppercase;
+    letter-spacing: 0px;
   }
   .language {
     position: absolute;
@@ -199,6 +202,7 @@
         grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: (50vw)[6];
         grid-template-rows: repeat(6, 50vw);
+    grid-row-gap: 50px;
   }
   .grid-container .grid_image {
     margin-top: 2rem;
@@ -247,9 +251,9 @@
   }
   .language {
     position: absolute;
-    top: 140px;
-    left: -135px;
-    font-size: 1rem;
+    top: 150px;
+    left: -150px;
+    font-size: 0.8rem;
     background-color: cadetblue;
     width: auto;
     padding: 10px;

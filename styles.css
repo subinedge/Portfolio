@@ -239,13 +239,14 @@ a.resume:hover {
   position: relative;
   /*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
   overflow: hidden;
+  border: 1px solid #e5e5e5;
 }
 
 .grid_item:hover .grid_image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
 }
 
 .text {
@@ -255,18 +256,20 @@ a.resume:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #fff;
+  color: #333;
   display: none;
-  font-family: "Roboto Mono";
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .online_view {
   margin-top: 5rem;
   padding: 5px 10px;
   background-color: transparent;
-  color: #fff;
+  color: "Alfa Slab One";
   outline: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #000000;
 }
 
 button.online_view {
@@ -278,7 +281,6 @@ button.online_view {
 button.online_view:hover {
   color: #fff;
   background-color: #36cfd4;
-  border: none;
 }
 
 .grid_item:hover .text {

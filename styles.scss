@@ -191,8 +191,6 @@ a.resume {
 
 
 
-
-
 .projects {
   position: relative;
   height: auto;
@@ -238,13 +236,15 @@ a.resume {
 .grid_item {
   position: relative;
 /*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
-  overflow: hidden; 
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
 }
 
 .grid_item:hover .grid_image {
   transform : scale(1.1);
-  filter: blur(2px);
+  filter: blur(3px);
 }
+
 
 .text {
   font-size : 1.3rem;
@@ -252,18 +252,20 @@ a.resume {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #333;
   display: none;
-  font-family: $roboto-mono;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .online_view {
   margin-top: 5rem;
   padding: 5px 10px;
   background-color: transparent;
-  color: #fff;
+  color: $heading-font;
   outline:none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #000000;
 }
 
 button.online_view {
@@ -274,7 +276,6 @@ button.online_view {
 button.online_view:hover{
   color: $plane-white;
   background-color: $button-hover-color;
-  border: none;
 }
 
 .grid_item:hover .text {

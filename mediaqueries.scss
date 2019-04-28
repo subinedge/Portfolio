@@ -1,5 +1,6 @@
 @import "mixins";
 $nav-bar: #1b242f;
+$roboto-mono: 'Roboto Mono';
 
 // ----------------------  1100 px --------------------------------
 
@@ -33,6 +34,9 @@ $nav-bar: #1b242f;
   .text {
     display: block;
     // background-color: #e5e5e5;
+    font-family: $roboto-mono;
+    text-transform: uppercase;
+    letter-spacing: 0px;
     
   }
 
@@ -210,6 +214,8 @@ $nav-bar: #1b242f;
     display:  grid;
     grid-template-columns : repeat(1,1fr);
     grid-template-rows: repeat(6, 50vw);
+    grid-row-gap: 50px;
+    // margin: 2rem;
 
     .grid_image {
       margin-top: 2rem;
@@ -264,7 +270,7 @@ $nav-bar: #1b242f;
     margin: 6rem -1rem;
   }
 
-  @include languagePlacement(140px, -135px, 1rem);
+  @include languagePlacement(150px, -150px, 0.8rem);
 }
 
 

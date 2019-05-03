@@ -40,6 +40,7 @@ $roboto-mono: 'Roboto Mono';
     
   }
 
+
   @include languagePlacement(165px, -165px, 1.1rem);
 
 
@@ -219,6 +220,7 @@ $roboto-mono: 'Roboto Mono';
 
     .grid_image {
       margin-top: 2rem;
+      object-fit: cover;
     }
   }
 
@@ -248,9 +250,7 @@ $roboto-mono: 'Roboto Mono';
 
 @media screen and (max-width: 500px) {
 
-  body{
-    overflow-x: hidden;
-  }
+
 
   .heading {
     font-size: 2.7rem;

@@ -182,21 +182,25 @@
 
   <section class="get-in-touch" id="contact_page">
     <h1 class="title">Get in touch</h1>
-    <form method="GET" action="form.php" class="contact-form row">
+    <form name="contact" method="POST" data-netlify="true" class="contact-form row">
 
       <div class="form-field col x-50">
-        <input type="text" id="name" class="input-text" name="sender_name" required>
+        <input type="text" id="name" class="input-text" name="name" required>
         <label for="name" class="label">Name</label>
       </div>
 
       <div class="form-field col x-50">
-        <input type="email" id="email" class="input-text" name="sender_mail" required>
+        <input type="email" id="email" class="input-text" name="email" required>
         <label for="email" class="label">Email</label>
       </div>
 
       <div class="form-field col x-100">
-        <input type="text" id="message" class="input-text" name="sender_message" required>
+        <input type="text" id="message" class="input-text" name="message" required>
         <label for="message" class="label">Message</label>
+      </div>
+
+      <div class="form-field col x-50">
+        <div data-netlify-recaptcha="true"></div>
       </div>
 
       <div class="form-field col x-100 align-center">

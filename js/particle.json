@@ -19,6 +19,9 @@
     "size": {
       "value": 5
     },
+    "line_linked": {
+      opacity:0.2
+    },
     "move": {
       "enable": true,
       "direction": "top"

@@ -10,7 +10,7 @@
       "type": "circle"
     },
     "opacity": {
-      "value": 0.4,
+      "value": 0,
       "anim": {
         "enable": false,
         "speed": 1

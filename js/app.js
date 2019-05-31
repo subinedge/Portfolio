@@ -13,21 +13,6 @@ particlesJS.load('particles-js', 'js/particle.json', function () {
 // On hover button, arrow rotate downwards
 
 let font_awesome = document.querySelector('.fa-arrow-right');
-let loader = document.querySelector('.loader');
-let main = document.querySelector('.main');
-
-function init() {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    loader.style.display = 'none';
-
-
-    main.style.display = 'block';
-    main.style.opacity = 1;
-  }, 1000)
-}
-
-init();
 
 
 function mouseEnter() {

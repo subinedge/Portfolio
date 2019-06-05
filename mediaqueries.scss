@@ -2,11 +2,271 @@
 $nav-bar: #1b242f;
 $roboto-mono: 'Roboto Mono';
 
+
+// ----------------------  2400 px --------------------------------
+
+@media screen and (min-width: 2400px) {
+  .header-words {
+    font-size: 4rem !important;
+    line-height: 5rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 1.2rem 2.2rem !important;
+      font-size: 1.8rem !important;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 2.8rem !important;
+  }
+
+  nav ul li a {
+    font-size: 1.9rem !important;
+  }
+
+  .heading {
+    font-size: 9rem !important;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.8rem !important;
+  }
+
+  .about-me-words p {
+    font-size: 1.8rem !important;
+    line-height: 2.8rem !important;
+  }
+
+  a.resume {
+    font-size: 1.8rem !important;
+  }
+
+  .projects .projects-header {
+    font-size: 3rem !important;
+  }
+
+  .get-in-touch {
+    max-width: 1000px !important;
+  }
+
+  .get-in-touch .title {
+    font-size: 3rem !important;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 27px;
+    padding: 15px 25px;
+  }
+
+  .movetotop {
+    width: 80px !important;
+    height: 70px !important;
+
+    i {
+      margin-top: 10px;
+      font-size: 2.5rem !important;
+    }
+  }
+}
+
+
+// ----------------------  1501 px --------------------------------
+
+@media screen and (min-width: 1501px) {
+  .header-words {
+    font-size: 3.2rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 0.9rem 1.9rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 2.6rem;
+  }
+
+  nav ul li a {
+    font-size: 1.7rem;
+  }
+
+  .heading {
+    font-size: 7rem;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.5rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+
+  a.resume {
+    font-size: 1.5rem;
+  }
+
+  .projects .projects-header {
+    font-size: 2.5rem;
+  }
+
+  .get-in-touch {
+    max-width: 900px;
+
+    .form-field {
+      margin-bottom: 70px;
+    }
+  }
+
+  .get-in-touch .title {
+    font-size: 2.5rem;
+
+    .row {
+      .col {
+        padding: 0px;
+      }
+    }
+  }
+
+  .movetotop {
+    width: 65px;
+    height: 65px;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 2.8rem;
+  i {
+    font-size: 2.3rem;
+    width: 4.5rem;
+  }
+}
+
+footer .copyright {
+  font-size: 1.7rem;
+}
+  
+}
+
+
+
+
+// ----------------------  1500 px --------------------------------
+
+@media screen and (max-width: 1500px) {
+  .header-words {
+    font-size: 3rem;
+  }
+
+  .social-media-icons a i {
+    font-size: 2.3rem;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  
+  .about-me-words h4 {
+    font-size: 1.2rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  a.resume {
+    font-size: 1.2rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-rows: repeat(2, 25vw);
+  }
+
+  .get-in-touch {
+    max-width: 800px;
+  }
+
+
+  .contact-form .submit-btn {
+    font-size: 25px;
+    padding: 14px 20px;
+  }
+
+  .movetotop {
+    width: 55px;
+    height: 55px;
+
+    i {
+      font-size: 1.8rem;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 2.5rem;
+  i {
+    font-size: 2rem;
+    width: 4rem;
+  }
+}
+
+footer .copyright {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+}
+
+
+
+// ----------------------  1300 px --------------------------------
+
+@media screen and (max-width: 1300px) {
+
+  .social-media-icons a i {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.2rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-rows: repeat(2, 22vw);
+  }
+
+  .get-in-touch {
+    max-width: 650px;
+  }
+}
+
+
+
+
 // ----------------------  1100 px --------------------------------
 
 @media screen and (max-width: 1100px) {
   nav ul {
     width: 50%;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 23px;
+    padding: 14px 20px;
   }
 }
 

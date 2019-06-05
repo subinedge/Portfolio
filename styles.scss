@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 .container {
   position: relative;
 }
@@ -155,6 +156,10 @@ nav {
     font-family: $para-font;
     color: rgb(65, 56, 46);
     line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -310,6 +315,7 @@ button.online_view:hover{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 36px;
+    font-weight: 900;
     // line-height: 2rem;
     padding-bottom: 2rem;
 

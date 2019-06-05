@@ -7,67 +7,80 @@ $roboto-mono: 'Roboto Mono';
 
 @media screen and (min-width: 2400px) {
   .header-words {
-    font-size: 4rem !important;
-    line-height: 5rem;
+    font-size: 4.5rem !important;
+    line-height:4.5rem !important;
 
     button {
-      margin: 1.5rem auto;
-      padding: 1.2rem 2.2rem !important;
-      font-size: 1.8rem !important;
+      font-size: 2rem !important;
     }
   }
 
   .social-media-icons a i {
-    font-size: 2.8rem !important;
+    font-size: 3.2rem !important;
+    padding: 20px;
   }
 
   nav ul li a {
-    font-size: 1.9rem !important;
+    font-size: 2.2rem !important;
   }
 
   .heading {
-    font-size: 9rem !important;
+    font-size: 12rem !important;
   }
   
   .about-me-words h4 {
-    font-size: 1.8rem !important;
+    font-size: 1.9rem !important;
   }
 
   .about-me-words p {
-    font-size: 1.8rem !important;
-    line-height: 2.8rem !important;
+    font-size: 1.9rem !important;
+    line-height: 2.9rem !important;
   }
 
   a.resume {
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
   }
 
   .projects .projects-header {
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
   }
+  
 
   .get-in-touch {
-    max-width: 1000px !important;
+    margin-top: 12rem;
+    max-width: 1200px !important;
   }
 
   .get-in-touch .title {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
   }
 
   .contact-form .submit-btn {
-    font-size: 27px;
+    font-size: 30px;
     padding: 15px 25px;
   }
 
   .movetotop {
     width: 80px !important;
-    height: 70px !important;
+    height: 90px !important;
 
     i {
       margin-top: 10px;
       font-size: 2.5rem !important;
     }
   }
+
+  footer .social-media-icons {
+    padding: 4rem !important;
+  i {
+    font-size: 3rem !important;
+    width: 5.5rem !important;
+  }
+}
+
+footer .copyright {
+  font-size: 2rem !important;
+}
 }
 
 
@@ -75,17 +88,18 @@ $roboto-mono: 'Roboto Mono';
 
 @media screen and (min-width: 1501px) {
   .header-words {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
 
     button {
-      margin: 1.5rem auto;
-      padding: 0.9rem 1.9rem;
-      font-size: 1.5rem;
+      margin: 1.8rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
     }
   }
 
   .social-media-icons a i {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
   }
 
   nav ul li a {
@@ -101,20 +115,20 @@ $roboto-mono: 'Roboto Mono';
   }
 
   .about-me-words p {
-    font-size: 1.6rem;
-    line-height: 2.3rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
   }
 
   a.resume {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .projects .projects-header {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   .get-in-touch {
-    max-width: 900px;
+    max-width: 960px;
 
     .form-field {
       margin-bottom: 70px;
@@ -122,7 +136,7 @@ $roboto-mono: 'Roboto Mono';
   }
 
   .get-in-touch .title {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 
     .row {
       .col {
@@ -131,12 +145,18 @@ $roboto-mono: 'Roboto Mono';
     }
   }
 
+  .contact-form .submit-btn {
+    font-size: 25px;
+    padding: 16px 20px;
+  }
+
   .movetotop {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 80px;
 
     i {
-      font-size: 2rem;
+      margin-top: 20px;
+      font-size: 2.2rem;
     }
   }
 
@@ -156,91 +176,48 @@ footer .copyright {
 
 
 
-
 // ----------------------  1500 px --------------------------------
 
 @media screen and (max-width: 1500px) {
+
   .header-words {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+
+    button {
+      margin: 1rem auto;
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+    }
   }
 
   .social-media-icons a i {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 
   nav ul li a {
+    font-size: 1.8rem;
+  }
+
+  .heading {
+    font-size: 7.5rem;
+  }
+  
+  .about-me-words h4 {
     font-size: 1.5rem;
   }
 
-  
-  .about-me-words h4 {
-    font-size: 1.2rem;
-  }
-
   .about-me-words p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 2rem;
   }
 
   a.resume {
-    font-size: 1.2rem;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns : repeat(3,1fr);
-    grid-template-rows: repeat(2, 25vw);
-  }
-
-  .get-in-touch {
-    max-width: 800px;
-  }
-
-
-  .contact-form .submit-btn {
-    font-size: 25px;
-    padding: 14px 20px;
-  }
-
-  .movetotop {
-    width: 55px;
-    height: 55px;
-
-    i {
-      font-size: 1.8rem;
-    }
-  }
-
-  footer .social-media-icons {
-    padding: 2.5rem;
-  i {
-    font-size: 2rem;
-    width: 4rem;
-  }
-}
-
-footer .copyright {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-}
-
-
-
-// ----------------------  1300 px --------------------------------
-
-@media screen and (max-width: 1300px) {
-
-  .social-media-icons a i {
-    font-size: 2rem;
-  }
-
-  nav ul li a {
     font-size: 1.3rem;
   }
 
-  .about-me-words p {
-    font-size: 1.2rem;
+  .projects .projects-header {
+    font-size: 2.5rem;
   }
 
   .grid-container {
@@ -250,8 +227,34 @@ footer .copyright {
   }
 
   .get-in-touch {
-    max-width: 650px;
+    max-width: 800px;
   }
+
+  .contact-form .submit-btn {
+    font-size: 20px;
+    padding: 10px 18px;
+  }
+
+  .movetotop {
+    width: 60px;
+    height: 60px;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 2.5rem;
+  i {
+    font-size: 2.5rem;
+    width: 4rem;
+  }
+}
+
+.copyright {
+  font-size: 1.5rem !important;
+}
 }
 
 
@@ -264,11 +267,46 @@ footer .copyright {
     width: 50%;
   }
 
-  .contact-form .submit-btn {
-    font-size: 23px;
-    padding: 14px 20px;
+  .header-words {
+    font-size: 3.5rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem;
+    }
   }
+
+  .social-media-icons a i {
+    font-size: 2.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.6rem;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.4rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  a.resume {
+    font-size: 1.3rem;
+  }
+
+.copyright {
+  font-size: 1.3rem !important;
 }
+.contact-form .submit-btn {
+  font-size: 23px;
+  padding: 14px 20px;
+}
+}
+
 
 
 // ----------------------  900 px --------------------------------
@@ -368,10 +406,44 @@ footer .copyright {
 
     .burger {
       display: block;
-      font-size: 1.4rem;
+      font-size: 2.5rem;
     }
   }
 
+  .header-words {
+    font-size: 2.8rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 1rem 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 2.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  .about-me-words h4 {
+    font-size: 1.3rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  a.resume {
+    font-size: 1.3rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem !important;
+  }
 
   @include languagePlacement(130px, -130px, 1rem);
 

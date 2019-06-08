@@ -1,0 +1,35 @@
+[33mcommit 2feb329f073f600b97ad67661af6032e39ef8087[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;32msmoothScrolling[m[33m)[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Fri Apr 19 14:26:16 2019 +0530
+
+    completed the footer section
+
+[33mcommit b6369495709e9aa280e8170d752c61b3dafb2784[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Thu Apr 18 19:12:47 2019 +0530
+
+    completed the contact us section and made it responsive
+
+[33mcommit 93eb16620983b3b12d858846ea98392a16d58935[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Sat Apr 13 21:18:12 2019 +0530
+
+    Added projects section and about me section
+
+[33mcommit baa4d9a3387598a37eff45099d0dd70521b914cc[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Fri Mar 29 23:43:37 2019 +0530
+
+    completed the navbar section
+
+[33mcommit ddbeece18b2f3d1c50248ccb1c521258290d99c6[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Sun Mar 24 22:29:51 2019 +0530
+
+    Header area completed, with Particle JS & Header text CTA
+
+[33mcommit d398bb98e30a2c2292fb7f26b12ea3bb08340405[m
+Author: Subin Sudhakaran <subinsamrat96@gmail.com>
+Date:   Sun Mar 24 14:11:16 2019 +0530
+
+    Initial file structure for portfolio. Added particleJS as dependency and SASS as devDependency

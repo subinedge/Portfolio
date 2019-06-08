@@ -1,0 +1,484 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// body {
+//   overflow-x: hidden;
+// }
+
+
+.container {
+  position: relative;
+}
+
+#particles-js {
+  background-color: $header-main;
+  height: 100vh;
+}
+
+.header-words {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.7rem;
+  color: $plane-white;
+  font-family: $primary-font;
+  line-height: 3rem;
+
+  span.name {
+    color: $name;
+    font-weight: bolder;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    // display: block;
+    cursor: pointer;
+    margin: 1rem auto;
+    padding: 0.7rem 1.7rem;
+    font-family: $primary-font;
+    background-color: transparent;
+    color: $plane-white;
+    border: 2px solid $plane-white;
+    font-size: 1.3rem;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+
+    i {
+      transition: all 0.3s linear;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+
+
+
+
+// -------------- NAVIGATION --------------
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  // max-width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: $nav-bar;
+  border-bottom: 4px solid $button-hover-color;
+  z-index: 999;
+  // overflow: hidden;
+
+  i {
+    cursor: pointer;
+    color: $plane-white;
+    letter-spacing: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+    li {
+      list-style-type: none;
+
+      a {
+        font-family: $primary-font;
+        transition: all 0.3s linear;
+        letter-spacing: 2px;
+        color: $plane-white;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $name;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+
+// ----------------- ABOUT ME ------------------ 
+
+
+
+
+.heading {
+  font-family: $heading-font;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  color: $nav-bar;
+  padding: 30px;
+  margin-top: 3rem;
+}
+
+.about-me-words {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  padding: 10px 30px;
+  text-align: justify;
+  grid-auto-rows: minmax(200px, auto);
+
+  h4 {
+    font-family: $roboto-mono;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: rgb(17, 59, 94);
+  }
+
+  p {
+    font-family: $para-font;
+    color: rgb(65, 56, 46);
+    line-height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.download-resume {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+a.resume {
+  text-decoration: none;
+  color: $header-main;
+  background-color: transparent;
+  color: $header-main;
+  border: 2px solid $header-main;
+  padding: 15px 30px;
+  transition: all 0.3s linear;
+  margin-bottom: 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-color;
+    color: $plane-white;
+  }
+}
+
+
+
+
+
+
+// Skills section
+
+
+
+.projects {
+  position: relative;
+  height: auto;
+  color: #111;
+  z-index: -1;
+  font-family: $primary-font;
+  padding: 1.5rem;
+
+  .projects-header {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .projects-header:after {
+    @include shortBorder(4rem, 10px, 3px, #111);
+  }
+  
+}
+
+.grid-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns : repeat(3,1fr);
+  grid-template-rows: repeat(2, 20vw);
+  height: auto;
+  // grid-gap: 10px;
+  // z-index: -1;
+}
+
+.grid_image {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:0.5s ease-in;
+}
+
+.grid_item {
+  position: relative;
+/*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+
+.grid_item:hover .grid_image {
+  transform : scale(1.1);
+  filter: blur(3px);
+}
+
+
+.text {
+  font-size : 1rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  display: none;
+  font-family: $heading-font;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.online_view {
+  margin-top: 5rem;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: $heading-font;
+  outline:none;
+  border: 1px solid #000000;
+}
+
+button.online_view {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.online_view:hover{
+  color: $plane-white;
+  background-color: $button-hover-color;
+}
+
+.grid_item:hover .text {
+  display: block;
+  
+/*   text to see, otherwise hides in the back */
+  z-index: 999;
+  animation : slide 0.7s ease;
+}
+
+
+
+
+
+
+// contact form
+
+
+
+
+
+.get-in-touch {
+  height: auto;
+  position: relative;
+  max-width: 650px;
+  margin: 6rem auto;
+  // top: 50%;
+  // transform: translateY(-50%);
+
+  .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    font-weight: 900;
+    // line-height: 2rem;
+    padding-bottom: 2rem;
+
+    &:after {
+      @include shortBorder(7rem, 10px, 3px, #111);
+    }
+  }
+}
+
+// aligning button
+
+.align-center {
+  text-align: center;
+}
+
+.row {
+  @include clearfix;
+  // margin: -20px 0;
+
+  .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+
+    &.x-50 {
+      width: 50%;
+    }
+
+    &.x-100 {
+      width: 100%;
+    }
+  }
+}
+
+
+.contact-form {
+  .form-field {
+    position: relative;
+    margin: 3rem 0;
+  }
+
+  .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus,
+    &.not-empty {
+      + .label {
+        transform: translateY(-24px);
+      }
+    }
+  }
+
+  .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform .2s ease-in-out;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+
+// back to top button
+
+
+
+
+
+.movetotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #1f80db;
+  bottom: 30px;
+  right: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  z-index: 999;
+
+  i {
+    color: $plane-white;
+  }
+}
+
+
+
+// footer section
+
+
+footer {
+  background-color: $nav-bar;
+  color: $plane-white;
+  height: auto;
+
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    i {
+      margin: 1.5rem;
+      font-size: 1.5rem;
+      background-color: $social-media-background-footer;
+      padding: 15px;
+      width: 3.3rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.4s ease-in;
+
+      &:hover {
+        background-color: $footer-social-media-hover;
+        transform: scale(0.9);
+        animation: incoming 0.5s ease;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 0 0 2rem 0;
+    color:#606A77;
+    font-size: 0.9rem;
+
+    span {
+      color: $name;
+    }
+  }
+}
+
+
+
+

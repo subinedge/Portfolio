@@ -1,13 +1,17 @@
 {
   "particles": {
     "number": {
-      "value": 75
+      "value": 65
     },
     "color": {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle"
+      "type": "circle",
+      "stroke": {
+        "width": -10,
+        "color": "#D3D3D3"
+      }
     },
     "opacity": {
       "value": 0.1,

@@ -1,0 +1,761 @@
+@import "mixins";
+$nav-bar: #1b242f;
+$roboto-mono: 'Roboto Mono';
+$button-hover-color: #36cfd4;
+
+
+// ----------------------  2400 px --------------------------------
+
+@media (min-width: 2400px) {
+  .header-words {
+    font-size: 4.5rem !important;
+    line-height:4.5rem !important;
+
+    button {
+      font-size: 2rem !important;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 3.2rem !important;
+    padding: 20px;
+  }
+
+  nav ul {
+    width: 100%;
+    li {
+      padding: 10px;
+    }
+  }
+
+  nav ul li a {
+    font-size: 2.2rem !important;
+  }
+
+  .heading {
+    font-size: 12rem !important;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.9rem !important;
+  }
+
+  .about-me-words p {
+    font-size: 1.9rem !important;
+    line-height: 2.9rem !important;
+  }
+
+  a.resume {
+    font-size: 2rem !important;
+  }
+
+  .projects .projects-header {
+    font-size: 3.2rem !important;
+  }
+  
+
+  .get-in-touch {
+    margin-top: 12rem;
+    max-width: 1200px !important;
+  }
+
+  .get-in-touch .title {
+    font-size: 3.5rem !important;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 30px;
+    padding: 15px 25px;
+  }
+
+  .movetotop {
+    width: 80px !important;
+    height: 90px !important;
+
+    i {
+      margin-top: 10px;
+      font-size: 2.5rem !important;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 4rem !important;
+  i {
+    font-size: 3rem !important;
+    width: 5.5rem !important;
+  }
+}
+
+footer .copyright {
+  font-size: 2rem !important;
+}
+}
+
+
+// ----------------------  1501 px --------------------------------
+
+@media (max-width: 2399px) and (min-width: 1501px) {
+  .header-words {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+
+    button {
+      margin: 1.8rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 2.8rem;
+  }
+
+  nav ul {
+    width: 100%;
+    li {
+      padding: 10px;
+    }
+  }
+
+  nav ul li a {
+    font-size: 1.7rem;
+  }
+
+  .heading {
+    font-size: 7rem;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.5rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  a.resume {
+    font-size: 1.6rem;
+  }
+
+  .projects .projects-header {
+    font-size: 2.7rem;
+  }
+
+  .get-in-touch {
+    max-width: 960px;
+
+    .form-field {
+      margin-bottom: 70px;
+    }
+  }
+
+  .get-in-touch .title {
+    font-size: 2.7rem;
+
+    .row {
+      .col {
+        padding: 0px;
+      }
+    }
+  }
+
+  .contact-form .submit-btn {
+    font-size: 25px;
+    padding: 16px 20px;
+  }
+
+  .movetotop {
+    width: 70px;
+    height: 80px;
+
+    i {
+      margin-top: 20px;
+      font-size: 2.2rem;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 2.8rem;
+  i {
+    font-size: 2.3rem;
+    width: 4.5rem;
+  }
+}
+
+footer .copyright {
+  font-size: 1.7rem;
+}
+  
+}
+
+
+@media (min-width: 1100px) and (max-width: 1500px) {
+  
+  .get-in-touch {
+    max-width: 700px;
+  }
+}
+
+
+
+// ----------------------  1500 px --------------------------------
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+
+  .header-words {
+    font-size: 2.9rem;
+    line-height: 3.5rem;
+
+    button {
+      margin: 0.8rem auto !important;
+      padding: 0.8rem 0.7rem !important;
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    width: 100%;
+    li {
+      padding: 10px;
+    }
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  .heading {
+    font-size: 7rem;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.1rem;
+  }
+
+  .about-me-words p {
+    font-size: 1rem;
+  }
+
+  a.resume {
+    font-size: 1rem;
+    padding:10px 15px; 
+  }
+
+  .projects .projects-header {
+    font-size: 2.3rem;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-rows: repeat(2, 22vw);
+  }
+
+  .contact-form .submit-btn {
+    font-size: 17px;
+    padding: 8px 15px;
+  }
+
+  .movetotop {
+    width: 50px;
+    height: 50px;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  footer .social-media-icons {
+    padding: 2rem;
+  i {
+    font-size: 1.8rem;
+    width: 3.5rem;
+  }
+}
+
+.copyright {
+  font-size: 1rem;
+}
+}
+
+
+
+
+// ----------------------  1100 px --------------------------------
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  nav ul {
+    width: 100%;
+    li {
+      padding: 10px;
+    }
+  }
+
+  .header-words {
+    font-size: 3.5rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 1rem 1.5rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+  
+  .about-me-words h4 {
+    font-size: 1.4rem;
+  }
+
+  .about-me-words p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  a.resume {
+    font-size: 1.3rem;
+  }
+
+.copyright {
+  font-size: 1.3rem !important;
+}
+.contact-form .submit-btn {
+  font-size: 23px;
+  padding: 14px 20px;
+}
+}
+
+
+
+// ----------------------  900 px --------------------------------
+
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns : repeat(2,1fr);
+    grid-template-rows: repeat(3, 30vw);
+  }
+
+  .grid_item:hover .grid_image {
+    transform : none;
+    filter: none;
+  }
+
+  nav ul {
+    width: 100%;
+    li {
+      padding: 10px;
+    }
+  }
+  
+  button:not(.header-cta) {
+    position: relative;
+    left: -1000px;
+  }
+
+  .text {
+    display: block;
+    font-family: $roboto-mono;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    
+  }
+
+
+  @include languagePlacement(165px, -165px, 1.1rem);
+
+
+  .grid_item:hover .text {
+    display: block;
+    animation: none;
+  }
+}
+
+
+// ----------------------  830 px --------------------------------
+
+@media screen and (max-width: 830px) {
+
+  
+  .heading {
+    font-size: 5rem;
+  }
+
+  .about-me-words {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    padding: 10px 30px;
+    text-align: justify;
+    grid-auto-rows: minmax(200px, auto);
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include languagePlacement(150px, -150px, 1.1rem);
+}
+
+// ----------------------  768 px --------------------------------
+
+@media screen and (max-width: 768px) {
+  
+
+  nav {
+    .menu {
+      // display: none;
+      position: absolute;
+      width: 50%;
+      height: 100vh;
+      background: #1b242f;
+      top: 8vh;
+      left: -100%;
+      transition: 0.8s ease;
+      
+
+      ul {
+        width: 100% !important;
+        display: block;
+        text-align: center;
+        
+        li {
+          margin: 2rem 1rem;
+          padding: 2rem;
+          border-bottom: 1px solid $button-hover-color;
+        }
+      }
+    }
+
+    .menu.active {
+      left:0;
+    }
+
+    .burger {
+      display: block;
+      font-size: 1.8rem;
+    }
+  }
+
+
+  .header-words {
+    font-size: 2.8rem;
+
+    button {
+      margin: 1.5rem auto;
+      padding: 0.6rem 1.5rem;
+      font-size: 1.1rem !important;
+    }
+  }
+
+  .social-media-icons a i {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  .about-me-words h4 {
+    font-size: 1rem;
+  }
+
+  .about-me-words p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  a.resume {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem !important;
+  }
+
+  @include languagePlacement(130px, -130px, 1rem);
+
+}
+
+
+
+
+// ----------------------  740 px --------------------------------
+
+@media screen and (max-width: 740px) {
+
+  .header-words {
+    font-size: 2.5rem;
+  }
+
+  button.header-cta {
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+  }
+
+  @include languagePlacement(125px, -110px, 0.8rem);
+}
+
+// ----------------------  600 px --------------------------------
+
+@media screen and (max-width: 600px) {
+
+  
+
+  .header-words {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  button.header-cta {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .projects {
+  .projects-header {
+    font-size: 30px;
+  }
+}
+
+  .get-in-touch {
+
+    .title {
+      font-size: 30px;
+    }
+
+    .row {
+      .col {
+        float: none;
+        padding: 0 4rem 0 4rem;
+     
+      &.x-50 {
+        width: 100%;
+        }
+    
+      }
+
+    }
+
+    .label {
+      padding: 0 0 0 3rem;
+    }
+  }
+
+  @include languagePlacement(110px, -80px, 0.8rem);
+}
+
+  
+
+// ----------------------  540 px --------------------------------
+
+@media screen and (max-width: 540px) {
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+
+  .about-me-words {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: justify;
+    grid-auto-rows: minmax(200px, auto);
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  .grid-container {
+    display:  grid;
+    grid-template-columns : repeat(1,1fr);
+    grid-template-rows: repeat(6, 50vw);
+    grid-row-gap: 50px;
+    // margin: 2rem;
+
+    .grid_image {
+      margin-top: 2rem;
+      object-fit: cover;
+    }
+  }
+
+  @include languagePlacement(165px, -165px, 1rem);
+
+  .movetotop {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+
+    i {
+      font-size: 23px;
+      position: absolute;
+      bottom: 10px;
+      right: 8px;
+    }
+  }
+
+}
+
+
+
+
+
+// ----------------------  500 px --------------------------------
+
+@media screen and (max-width: 500px) {
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .header-words {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  button.header-cta {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .about-me-words p {
+    font-size:1.1rem;
+  }
+
+  .contact-form .submit-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+
+  footer .social-media-icons {
+    padding: 1.5rem;
+  i {
+    font-size: 1.3rem;
+    width: 3rem;
+  }
+}
+
+.copyright {
+  font-size: 0.9rem !important;
+}
+
+  @include languagePlacement(150px, -150px, 0.8rem);
+}
+
+
+
+
+
+// ----------------------  400 px --------------------------------
+
+@media screen and (max-width: 400px) {
+
+  .heading {
+    font-size: 2.3rem;
+  }
+
+  .header-words {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  button.header-cta {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  @include languagePlacement(120px, -115px, 0.8rem);
+
+  footer {
+    .social-media-icons {
+      i {
+        margin: 1rem;
+        font-size: 1.5rem;
+        padding: 15px;
+        width: 3rem;
+      }
+    }
+  }
+}
+
+
+
+// ----------------------  350 px --------------------------------
+
+@media screen and (max-width: 350px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-words {
+    font-size: 1.3rem;
+
+    button {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.8rem;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      i {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  .heading {
+    font-size: 2.3rem;
+    padding: 20px;
+    margin-top: 2rem;
+  }
+
+  nav {
+    min-height: 8vh;
+  }
+
+  .get-in-touch {
+  .title {
+    font-size: 1.5rem;
+
+    &:after {
+      @include shortBorder(5rem, 5px, 3px, #111);
+    }
+  }
+}
+
+@include languagePlacement(110px, -75px, 0.8rem);
+  
+  footer {
+    .social-media-icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  }
+}
+
+
+

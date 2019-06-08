@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  position: relative; }
+
+#particles-js {
+  background-color: #252934;
+  height: 100vh; }
+
+.header-words {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.7rem;
+  color: #fff;
+  font-family: "Karla";
+  line-height: 3rem; }
+  .header-words span.name {
+    color: #E31C6E;
+    font-weight: bolder; }
+  .header-words a {
+    text-decoration: none; }
+  .header-words button {
+    cursor: pointer;
+    margin: 1rem auto;
+    padding: 0.7rem 1.7rem;
+    font-family: "Karla";
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.3rem;
+    transition: all 0.3s linear; }
+    .header-words button:hover {
+      background-color: #36cfd4; }
+    .header-words button i {
+      transition: all 0.3s linear;
+      margin-left: 0.5rem; }
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #1b242f;
+  border-bottom: 4px solid #36cfd4;
+  z-index: 999; }
+  nav i {
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 2rem; }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%; }
+    nav ul li {
+      list-style-type: none; }
+      nav ul li a {
+        font-family: "Karla";
+        transition: all 0.3s linear;
+        letter-spacing: 2px;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer; }
+        nav ul li a:hover {
+          color: #E31C6E;
+          font-weight: bolder; }
+  nav .burger {
+    display: none; }
+
+.heading {
+  font-family: "Alfa Slab One";
+  font-size: 6rem;
+  letter-spacing: 2px;
+  color: #1b242f;
+  padding: 30px;
+  margin-top: 3rem; }
+
+.about-me-words {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  padding: 10px 30px;
+  text-align: justify;
+  grid-auto-rows: minmax(200px, auto); }
+  .about-me-words h4 {
+    font-family: "Roboto Mono";
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: #113b5e; }
+  .about-me-words p {
+    font-family: "Karla";
+    color: #41382e;
+    line-height: 1.5rem; }
+  .about-me-words a {
+    text-decoration: none; }
+
+.download-resume {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+a.resume {
+  text-decoration: none;
+  color: #252934;
+  background-color: transparent;
+  color: #252934;
+  border: 2px solid #252934;
+  padding: 15px 30px;
+  transition: all 0.3s linear;
+  margin-bottom: 3rem;
+  cursor: pointer; }
+  a.resume:hover {
+    background-color: #36cfd4;
+    color: #fff; }
+
+.projects {
+  position: relative;
+  height: auto;
+  color: #111;
+  z-index: -1;
+  font-family: "Karla";
+  padding: 1.5rem; }
+  .projects .projects-header {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 2rem;
+    padding-bottom: 1rem; }
+  .projects .projects-header:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 4rem;
+    padding-top: 10px;
+    border-bottom: 3px solid #111; }
+
+.grid-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20vw);
+  height: auto; }
+
+.grid_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in; }
+
+.grid_item {
+  position: relative;
+  /*   overflow: hidden will prevent the image scaling to exceed the specified width. It will expand on back */
+  overflow: hidden;
+  border: 1px solid #e5e5e5; }
+
+.grid_item:hover .grid_image {
+  transform: scale(1.1);
+  filter: blur(3px); }
+
+.text {
+  font-size: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  display: none;
+  font-family: "Alfa Slab One";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.online_view {
+  margin-top: 5rem;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: "Alfa Slab One";
+  outline: none;
+  border: 1px solid #000000; }
+
+button.online_view {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; }
+
+button.online_view:hover {
+  color: #fff;
+  background-color: #36cfd4; }
+
+.grid_item:hover .text {
+  display: block;
+  /*   text to see, otherwise hides in the back */
+  z-index: 999;
+  animation: slide 0.7s ease; }
+
+.get-in-touch {
+  height: auto;
+  position: relative;
+  max-width: 650px;
+  margin: 6rem auto; }
+  .get-in-touch .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 2rem; }
+    .get-in-touch .title:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 7rem;
+      padding-top: 10px;
+      border-bottom: 3px solid #111; }
+
+.align-center {
+  text-align: center; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+.row .col {
+  padding: 0 20px;
+  float: left;
+  box-sizing: border-box; }
+  .row .col.x-50 {
+    width: 50%; }
+  .row .col.x-100 {
+    width: 100%; }
+
+.contact-form .form-field {
+  position: relative;
+  margin: 3rem 0; }
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400; }
+  .contact-form .input-text:focus {
+    outline: none; }
+  .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px); }
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: text;
+  transition: transform .2s ease-in-out; }
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer; }
+
+.movetotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #1f80db;
+  bottom: 30px;
+  right: 40px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+  z-index: 999; }
+  .movetotop i {
+    color: #fff; }
+
+footer {
+  background-color: #1b242f;
+  color: #fff;
+  height: auto; }
+  footer .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; }
+    footer .social-media-icons i {
+      margin: 1.5rem;
+      font-size: 1.5rem;
+      background-color: #262F38;
+      padding: 15px;
+      width: 3.3rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.4s ease-in; }
+      footer .social-media-icons i:hover {
+        background-color: #04C2C9;
+        transform: scale(0.9);
+        animation: incoming 0.5s ease; }
+  footer .copyright {
+    text-align: center;
+    padding: 0 0 2rem 0;
+    color: #606A77;
+    font-size: 0.9rem; }
+    footer .copyright span {
+      color: #E31C6E; }
+
+/*# sourceMappingURL=styles.css.map */

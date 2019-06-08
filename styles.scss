@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+// body {
+//   overflow-x: hidden;
+// }
+
 
 .container {
   position: relative;
@@ -116,11 +120,6 @@ nav {
     display: none;
   }
 }
-
-.nav-active {
-  opacity: 1;
-  }
-
 
 
 // ----------------- ABOUT ME ------------------ 

@@ -80,9 +80,6 @@ nav {
   nav .burger {
     display: none; }
 
-.nav-active {
-  opacity: 1; }
-
 .heading {
   font-family: "Alfa Slab One";
   font-size: 6rem;

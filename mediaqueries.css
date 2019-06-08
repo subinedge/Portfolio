@@ -9,6 +9,11 @@
     font-size: 3.2rem !important;
     padding: 20px; }
 
+  nav ul {
+    width: 100%; }
+    nav ul li {
+      padding: 10px; }
+
   nav ul li a {
     font-size: 2.2rem !important; }
 
@@ -66,6 +71,11 @@
   .social-media-icons a i {
     font-size: 2.8rem; }
 
+  nav ul {
+    width: 100%; }
+    nav ul li {
+      padding: 10px; }
+
   nav ul li a {
     font-size: 1.7rem; }
 
@@ -114,7 +124,10 @@
 
   footer .copyright {
     font-size: 1.7rem; } }
-@media screen and (max-width: 1500px) {
+@media (min-width: 1100px) and (max-width: 1500px) {
+  .get-in-touch {
+    max-width: 700px; } }
+@media (min-width: 1101px) and (max-width: 1500px) {
   .header-words {
     font-size: 2.9rem;
     line-height: 3.5rem; }
@@ -124,7 +137,12 @@
       font-size: 1.2rem !important; }
 
   .social-media-icons a i {
-    font-size: 2.1rem; }
+    font-size: 1.8rem; }
+
+  nav ul {
+    width: 100%; }
+    nav ul li {
+      padding: 10px; }
 
   nav ul li a {
     font-size: 1.2rem; }
@@ -150,9 +168,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 22vw); }
 
-  .get-in-touch {
-    max-width: 700px; }
-
   .contact-form .submit-btn {
     font-size: 17px;
     padding: 8px 15px; }
@@ -171,9 +186,11 @@
 
   .copyright {
     font-size: 1rem; } }
-@media screen and (max-width: 1100px) {
+@media (min-width: 901px) and (max-width: 1100px) {
   nav ul {
-    width: 50%; }
+    width: 100%; }
+    nav ul li {
+      padding: 10px; }
 
   .header-words {
     font-size: 3.5rem; }
@@ -183,10 +200,10 @@
       font-size: 1.8rem; }
 
   .social-media-icons a i {
-    font-size: 2.5rem; }
+    font-size: 1.8rem; }
 
   nav ul li a {
-    font-size: 1.6rem; }
+    font-size: 1.1rem; }
 
   .about-me-words h4 {
     font-size: 1.4rem; }
@@ -213,6 +230,11 @@
   .grid_item:hover .grid_image {
     transform: none;
     filter: none; }
+
+  nav ul {
+    width: 100%; }
+    nav ul li {
+      padding: 10px; }
 
   button:not(.header-cta) {
     position: relative;
@@ -261,49 +283,51 @@
     padding: 10px;
     text-align: left; } }
 @media screen and (max-width: 768px) {
-  nav ul {
+  nav .menu {
     position: absolute;
-    right: 0px;
-    height: 92vh;
+    width: 50%;
+    height: 100vh;
+    background: #1b242f;
     top: 8vh;
-    background-color: #1b242f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease-in;
-    opacity: 0; }
-    nav ul li {
+    left: -100%;
+    transition: 0.8s ease; }
+    nav .menu ul {
+      width: 100% !important;
+      display: block;
       text-align: center; }
-  nav .fa-linkedin-square,
-  nav .fa-instagram,
-  nav .fa-github {
-    font-size: 1.8rem; }
+      nav .menu ul li {
+        margin: 2rem 1rem;
+        padding: 2rem;
+        border-bottom: 1px solid #36cfd4; }
+  nav .menu.active {
+    left: 0; }
   nav .burger {
     display: block;
-    font-size: 2.5rem; }
+    font-size: 1.8rem; }
 
   .header-words {
     font-size: 2.8rem; }
     .header-words button {
       margin: 1.5rem auto;
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem; }
+      padding: 0.6rem 1.5rem;
+      font-size: 1.1rem !important; }
 
   .social-media-icons a i {
-    font-size: 2.5rem; }
+    font-size: 1.8rem; }
 
   nav ul li a {
-    font-size: 1.5rem; }
+    font-size: 1.2rem;
+    text-transform: uppercase; }
 
   .about-me-words h4 {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
 
   .about-me-words p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.7rem; }
 
   a.resume {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
 
   .copyright {
     font-size: 1.4rem !important; }
@@ -344,7 +368,7 @@
     padding: 0.5rem 0.7rem; }
 
   .heading {
-    font-size: 3.15rem; }
+    font-size: 4rem; }
 
   .projects .projects-header {
     font-size: 30px; }
@@ -370,7 +394,7 @@
     text-align: left; } }
 @media screen and (max-width: 540px) {
   .heading {
-    font-size: 2.75rem; }
+    font-size: 3.5rem; }
 
   .about-me-words {
     display: grid;
@@ -411,7 +435,7 @@
       right: 8px; } }
 @media screen and (max-width: 500px) {
   .heading {
-    font-size: 2.7rem; }
+    font-size: 3rem; }
 
   .header-words {
     font-size: 1.7rem;
@@ -421,8 +445,24 @@
     font-size: 0.9rem;
     padding: 0.5rem 0.7rem; }
 
-  .get-in-touch {
-    margin: 6rem -1rem; }
+  .about-me-words p {
+    font-size: 1.1rem; }
+
+  .contact-form .submit-btn {
+    font-size: 13px;
+    padding: 5px 10px; }
+
+  footer {
+    margin-bottom: 0; }
+
+  footer .social-media-icons {
+    padding: 1.5rem; }
+    footer .social-media-icons i {
+      font-size: 1.3rem;
+      width: 3rem; }
+
+  .copyright {
+    font-size: 0.9rem !important; }
 
   .language {
     position: absolute;
@@ -464,13 +504,6 @@
   body {
     overflow-x: hidden; }
 
-  nav ul {
-    height: 91vh; }
-    nav ul li {
-      margin-left: 3rem; }
-    nav ul li:first-child {
-      margin-left: 70px; }
-
   .header-words {
     font-size: 1.3rem; }
     .header-words button {
@@ -487,7 +520,7 @@
     margin-top: 2rem; }
 
   nav {
-    min-height: 9vh; }
+    min-height: 8vh; }
 
   .get-in-touch .title {
     font-size: 1.5rem; }

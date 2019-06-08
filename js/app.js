@@ -29,26 +29,39 @@ function mouseLeave() {
 
 const navSlide = function () {
   const burger = document.querySelector('.burger');
-  const navLink = document.querySelector('.navLink');
-  const navLinksAll = document.querySelectorAll('.navLink li');
+  const menu = document.querySelector('nav .menu');
+
+  console.log(menu);
 
   burger.addEventListener('click', () => {
-    navLink.classList.toggle('nav-active');
-    // console.log('clicked');
-
-    // onclick animation on burger menu
-    navLinksAll.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `navLinkFade 1s ease forwards ${index / 7 +
-          0.5}`;
-      }
-    });
+    menu.classList.toggle('active');
+    console.log(menu);
   });
-};
+}
+//   
+//   const navLink = document.querySelector('.navLink');
+//   const navLinksAll = document.querySelectorAll('.navLink li');
+
+//   burger.addEventListener('click', () => {
+//     navLink.classList.toggle('nav-active');
+
+//     // onclick animation on burger menu
+//     navLinksAll.forEach((link, index) => {
+//       if (link.style.animation) {
+//         link.style.animation = '';
+//       } else {
+//         link.style.animation = `navLinkFade 1s ease forwards ${index / 7 +
+//           0.5}`;
+//       }
+//     });
+//   });
+// };
 
 navSlide();
+
+
+
+
 
 
 // checking for input data in contact form, if yes.... remove the label or else stay fit

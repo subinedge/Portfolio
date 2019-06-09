@@ -16,16 +16,3 @@
     clear: both;
   }
 }
-
-@mixin languagePlacement($top, $left, $font) {
-  .language {
-    position: absolute;
-    top: $top;
-    left: $left;
-    font-size: $font;
-    background-color: cadetblue;
-    width: auto;
-    padding: 10px;
-    text-align: left;
-  }
-}

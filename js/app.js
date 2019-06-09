@@ -61,6 +61,44 @@ navSlide();
 
 
 
+// For skills section
+
+const moreInfoElement = document.querySelectorAll('.moreinfo');
+const overlay = document.querySelectorAll('.overlay');
+const close = document.querySelectorAll('.fa-times');
+const projectHeading = document.querySelectorAll('.words h2');
+
+projectHeading.forEach(heading => {
+  heading.addEventListener('click', projectInfo);
+})
+
+moreInfoElement.forEach(moreInfo => {
+  moreInfo.addEventListener('click', projectInfo);
+})
+
+close.forEach(indiClose => {
+  indiClose.addEventListener('click', closeOverlay);
+})
+
+// moreInfoElement.addEventListener('click', projectInfo);
+// close.addEventListener('click', closeOverlay);
+
+
+function projectInfo(event) {
+  let singleOverlay = event.target.parentElement.parentElement.querySelectorAll('.overlay')[0];
+  console.log(singleOverlay);
+  singleOverlay.classList.add('active-overlay');
+}
+
+function closeOverlay() {
+  overlay.forEach(singOverlay => {
+    singOverlay.classList.remove('active-overlay');
+  })
+}
+
+
+
+
 
 
 

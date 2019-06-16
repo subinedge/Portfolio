@@ -121,5 +121,5 @@ input_field.forEach(input => {
 // download resume
 
 const fileDownload = document.querySelector('.resume').addEventListener('click', function () {
-  window.location = './resume/Resume.docx';
+  window.location = './resume/Resume.pdf';
 });
